@@ -1,39 +1,134 @@
-* {
-  margin: 0;
-  padding: 0;
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400, 800");
+body {
+  font-family: "Open Sans", sans-serif;
+  max-width: 450px;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #354044;
+  font-size: 16px;
+  text-transform: uppercase;
+  overflow: hidden;
 }
 
 #form {
-  width: 100%;
-  max-width: 1280px;
-  margin: 50vh auto;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  background-color: #b3a4a4;
-  text-align: left;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 600px;
-  height: 400px;
+  position: absolute;
+  left: -43%;
+}
+
+.header,
+.label {
+  display: block;
+  font-weight: 700;
+  color: #fdfeff;
+  padding: 10px 0;
+}
+
+.header {
+  width: 400px;
+  font-size: 50px;
+  margin: 20px 0;
 }
 
 .input {
-  padding: 10px;
-  margin: 10px;
-  text-align: right;
+  font-family: "Open Sans", sans-serif;
+  max-width: 400px;
+  width: 80%;
+  height: 1.8rem;
+  border: 0;
+  border-radius: 2px;
+  -webkit-box-shadow: 6px 3px 13px 0px #161414;
+          box-shadow: 6px 3px 13px 0px #161414;
+  padding: 0px 5px;
 }
 
-.labels {
-  text-align: left;
+.input.php {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.message {
+  font-family: "Open Sans", sans-serif;
+  max-width: 400px;
+  width: 80%;
+  padding: 10px 5px;
+  margin-bottom: 20px;
+  border: 0;
+  border-radius: 2px;
+  -webkit-box-shadow: 6px 3px 13px 0px #161414;
+          box-shadow: 6px 3px 13px 0px #161414;
+}
+
+.button {
+  background-color: #98554f;
+  max-width: 410px;
+  width: 82%;
+  border: 0;
+  border-radius: 2px;
+  color: #fdfeff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 10px 0;
+  -webkit-box-shadow: 6px 3px 13px 0px #161414;
+          box-shadow: 6px 3px 13px 0px #161414;
+}
+
+.button:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #fdfeff;
+  color: #98554f;
+  cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+  font-style: italic;
+  color: #98554f;
+}
+
+:-ms-input-placeholder {
+  font-style: italic;
+  color: #98554f;
+}
+
+::-ms-input-placeholder {
+  font-style: italic;
+  color: #98554f;
+}
+
+::placeholder {
+  font-style: italic;
+  color: #98554f;
+}
+
+#php {
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 30%;
+  width: 300px;
+  height: 100px;
+  padding: 5px;
+  text-align: center;
+  border: 0;
+  border-radius: 2px;
+  -webkit-box-shadow: 6px 3px 13px 0px #161414;
+          box-shadow: 6px 3px 13px 0px #161414;
+  display: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#phpBox {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

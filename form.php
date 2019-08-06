@@ -6,32 +6,32 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 if (isset($_POST['submit'])) { 
 // data from the HTML form that is put in to variables
-$name = $_POST["fullname"];
-$clientEmail = $_POST["email"];
-$clientMessage = $_POST["message"];
+    $name = $_POST["fullname"];
+    $clientEmail = $_POST["email"];
+    $clientMessage = $_POST["message"];
 // define the form of the email the user will recieve
-$email_from = $clientEmail;
-$email_subject = "new email from $clientEmail";
-$email_body = "Hello, you have recieved a message from $name. Below you can find the message: <br>-----<br> $clientMessage";
+    $email_from = $clientEmail;
+    $email_subject = "new email from $clientEmail";
+   $email_body = "Hello, you have recieved a message from $name. Below you can find the message: <br>-----<br> $clientMessage";
 // check if form contains data from the user
 if (empty($name)){
-  echo "*fill in your name*";
+     echo "*fill in your name*";
   exit;
 } else if(empty($clientEmail)){
-  echo "*fill in your email*";
+     echo "*fill in your email*";
   exit;
 } else if(empty($clientMessage)){
-  echo "*fill in your message*";
+   echo "*fill in your message*";
   exit;
 } else{
-  $mail;
+     $mail;
 }
 // sanitize the email so that the value is correct
 $sanitized_email = filter_var($clientEmail, FILTER_SANITIZE_EMAIL);
 if (filter_var($sanitized_email, FILTER_VALIDATE_EMAIL)) {
     $mail;
 } else{
-  echo "*this is not a valid email adress*";
+     echo "*this is not a valid email adress*";
   exit;
 }
 // end email sanitizer. 
