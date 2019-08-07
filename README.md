@@ -17,4 +17,4 @@ when all functionalities were working, i added CSS styling and Javascript animat
 
 ## Preview
 
-![screenshot](Assets/pics/Capture.png)
+![screenshot](.Assets/pics/Capture.png)
