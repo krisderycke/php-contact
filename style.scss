@@ -5,10 +5,12 @@ body {
   max-width: 450px;
   width: 80%;
   margin: 0 auto;
+  // background: url("./Assets/pics/antique-black-communication-821754.jpg");
   background-color: #354044;
   font-size: 16px;
   text-transform: uppercase;
   overflow: hidden;
+  // clip-path: polygon(1% 0, 80% 0%, 100% 100%, 14% 79%);
 }
 
 #form {
