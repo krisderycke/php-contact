@@ -13,4 +13,4 @@ after checking if everything works, i made a new php page with a variable contan
 when all functionalities were working, i added CSS styling and Javascript animation.
 
 ## Preview
-![screenschot](./capture.png)
+![screenschot](.capture.png)
